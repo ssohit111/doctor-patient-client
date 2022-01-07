@@ -4,7 +4,7 @@ import axios from 'axios';
 const PatientList = () => {
     const [dataFromexpress, setdataFromexpress] = useState([{}]);
     useEffect(() => {
-        axios.get('https://doctor-patient-server.herokuapp.com/patientlist')
+        axios.get('http://localhost:5000/patientlist')
             .then((res) => {
                 setdataFromexpress(res.data);
             })

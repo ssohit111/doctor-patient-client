@@ -10,7 +10,7 @@ const Totalcasepatientbyid = () => {
     }
     const submitHandler = (e) => {
         e.preventDefault();
-        axios.get(`https://doctor-patient-server.herokuapp.com/casebyid/${Id}`)
+        axios.get(`http://localhost:5000/casebyid/${Id}`)
             .then((val) => {
                 setDatafromexpress(val.data);
                 setFlag(true);

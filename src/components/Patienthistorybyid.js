@@ -10,7 +10,7 @@ const Patienthistorybyid = () => {
     }
     const submitHandler = (e) => {
         e.preventDefault();
-        axios.get(`https://doctor-patient-server.herokuapp.com/historybyid/${Id}`)
+        axios.get(`http://localhost:5000/historybyid/${Id}`)
             .then((val) => {
                 setDatafromexpress(val.data);
                 setFlag(true);
