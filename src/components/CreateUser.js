@@ -29,7 +29,7 @@ const CreateUser = () => {
     const submitHandler = (e) => {
         // e.preventDefault();
         // console.log(`My name is ${name} and my age is ${age} and my gender is ${gender}`);
-        const mydata = { id, name, email, gender, age, symptom };
+        const mydata = { id, name, email, gender, age, symptoms };
         axios.post('https://doctor-patient-server.herokuapp.com/createuser', mydata)
             .then(() => console.log("User created sucessfully"))
             .catch((err) => console.log("Error in Create User axios post request"))
