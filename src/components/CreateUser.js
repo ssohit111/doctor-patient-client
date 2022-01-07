@@ -27,7 +27,7 @@ const CreateUser = () => {
         setSymptoms(e.target.value);
     }
     const submitHandler = (e) => {
-        // e.preventDefault();
+        e.preventDefault();
         // console.log(`My name is ${name} and my age is ${age} and my gender is ${gender}`);
         const mydata = { id, name, email, gender, age, symptoms };
         axios.post('https://doctor-patient-server.herokuapp.com/createuser', mydata)
