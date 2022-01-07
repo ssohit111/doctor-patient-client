@@ -20,8 +20,8 @@ const Header = () => {
                             <Link to='/' style={mystyle}>Home</Link>
                             <Link to='/patientlist' style={mystyle}>Patient's List</Link>
                             <Link to='/doctorlist' style={mystyle}>Doctor's List</Link>
-                            <Link to='/historybyid' style={mystyle}>Get Patient's history by id</Link>
-                            <Link to='/casebyid' style={mystyle}>Get total case of a patient by id</Link>
+                            <Link to='/historybyid' style={mystyle}>Get Patient's History By ID</Link>
+                            <Link to='/casebyid' style={mystyle}>Get Total Case Of a Patient By ID</Link>
                             <Link to='/createuser' style={mystyle}>Create User</Link>
                         </Nav>
                     </Navbar.Collapse>

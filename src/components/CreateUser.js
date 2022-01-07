@@ -40,7 +40,7 @@ const CreateUser = () => {
             <form onSubmit={submitHandler} style={{ paddingLeft: "100px", paddingTop: "10px" }}>
                 <br />
                 <br />
-                <label>Enter Id :</label><br />
+                <label>Enter ID :</label><br />
                 <input type="number" value={id} onChange={idHandler} required />
                 <br />
                 <label>Enter Name :</label><br />
