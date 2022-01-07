@@ -51,9 +51,9 @@ const CreateUser = () => {
                 <br />
                 <label>Choose Gender :</label><br />
                 <div >
-                    <input type="radio" value="Male" checked={gender === "Male"} onChange={genderHandler} /> MALE
-                    <input type="radio" value="Female" checked={gender === "Female"} onChange={genderHandler} /> FEMALE
-                    <input type="radio" value="Others" checked={gender === "Others"} onChange={genderHandler} /> OTHERS
+                    <input type="radio" value="Male" checked={gender === "Male"} onChange={genderHandler} /> Male
+                    <input type="radio" value="Female" checked={gender === "Female"} onChange={genderHandler} /> Female
+                    <input type="radio" value="Others" checked={gender === "Others"} onChange={genderHandler} /> Others
                 </div>
                 <br />
                 <label>Enter Age :</label><br />
