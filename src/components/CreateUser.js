@@ -7,7 +7,7 @@ const CreateUser = () => {
     const [email, setEmail] = useState("");
     const [gender, setGender] = useState("");
     const [age, setAge] = useState("");
-    const [symptom, setSymptom] = useState("");
+    const [symptoms, setSymptoms] = useState("");
     const idHandler = (e) => {
         setId(e.target.value);
     }
@@ -23,8 +23,8 @@ const CreateUser = () => {
     const ageHandler = (e) => {
         setAge(e.target.value);
     }
-    const symptomHandler = (e) => {
-        setSymptom(e.target.value);
+    const symptomsHandler = (e) => {
+        setSymptoms(e.target.value);
     }
     const submitHandler = (e) => {
         // e.preventDefault();
@@ -60,7 +60,7 @@ const CreateUser = () => {
                 <input type="number" value={age} onChange={ageHandler} required />
                 <br />
                 <label>Enter Symptom :</label><br />
-                <input type="text" value={symptom} onChange={symptomHandler} required />
+                <input type="text" value={symptoms} onChange={symptomsHandler} required />
                 <br /><br /><br />
                 <button style={{ backgroundColor: "green", borderRadius: "5px" }}>Submit</button>
             </form>
